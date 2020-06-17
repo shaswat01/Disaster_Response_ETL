@@ -6,6 +6,6 @@ plotly
 nltk
 flask
 sqlalchemy
-json
 pickle
+joblib
 matplotlib
