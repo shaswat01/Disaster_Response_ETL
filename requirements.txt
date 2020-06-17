@@ -6,6 +6,5 @@ plotly
 nltk
 flask
 sqlalchemy
-pickle
 joblib
 matplotlib
