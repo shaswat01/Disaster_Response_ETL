@@ -1,7 +1,6 @@
 import nltk
 import json
 import plotly
-from etl_app import app
 import pandas as pd
 import plotly.graph_objects as go
 
@@ -16,7 +15,7 @@ from sklearn.externals import joblib
 from sqlalchemy import create_engine
 
 
-
+app = Flask(__name__)
 
 def tokenize(text):
     tokens = word_tokenize(text)
@@ -140,11 +139,11 @@ def go():
     )
 
 
-# def main():
-#     app.run()
-#     # app.run(host='0.0.0.0', port=3001, debug=True)
+def main():
+    app.run(threaded=True)
+    #app.run(host='0.0.0.0', port=3001, debug=True)
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
 
