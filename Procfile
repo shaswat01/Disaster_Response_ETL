@@ -1,1 +1,1 @@
-web gunicorn app:app
+web gunicorn etl_app:app

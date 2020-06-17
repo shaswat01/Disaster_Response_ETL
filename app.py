@@ -1,1 +1,1 @@
-from app import run
+from etl_app import app
